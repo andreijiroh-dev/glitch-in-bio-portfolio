@@ -1,9 +1,12 @@
 import { html } from "lighterhtml";
 import settings from "../settings.json";
 
-export const renderHeader = html.node`<div>
+export const renderHeader = html.node`
+<div>
   <div class='avatar-container'>
     <img src='${settings.avatarImage}' class='avatar' alt='${settings.name}' />
   </div>
   <h1>${settings.name}</h1>
-</div>`;
+</div>
+<div><p>${settings.bio}</p></div>
+`;
